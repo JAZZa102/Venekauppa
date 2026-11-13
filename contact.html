@@ -9,21 +9,7 @@
  
 </head>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
 
-    const params = new URLSearchParams(window.location.search);
-    const vene = params.get("vene");
-
-    if (vene) {
-        const valikko = document.getElementById("subject");
-        if (valikko) {
-            valikko.value = vene;
-        }
-    }
-
-});
-</script>
 <header>
     <div class="rajaus header-content">
             <a href="index.html" class="logo">VeneKauppa</a>
@@ -60,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     
 
                     
-                    <option value="vene1">Honda</option>
-                    <option value="Support">Marine</option>
-                    <option value="Feedback">LTAPSAH</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Marine">Marine</option>
+                    <option value="LTAPSAH">LTAPSAH</option>
 
                     </select>
                     </div>
@@ -89,5 +75,21 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </footer>
     
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const params = new URLSearchParams(window.location.search);
+    const vene = params.get("vene");
+
+    if (vene) {
+        const valikko = document.getElementById("subject");
+        if (valikko) {
+            valikko.value = vene;
+        }
+    }
+
+});
+</script>
 </body>
 </html>
