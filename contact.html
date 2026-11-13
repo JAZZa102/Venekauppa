@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="CSS/style.css">
  
 </head>
-
-
-<header>
+<body>
+    <header>
     <div class="rajaus header-content">
             <a href="index.html" class="logo">VeneKauppa</a>
             <nav>
@@ -19,9 +18,7 @@
                 <a href="contact.html">Tiedustelu</a>
             </nav>
         </div>
-</header>
-<body>
-
+    </header>
     <main>
         <form action="https://httpbin.org/post" method="post">
 
@@ -43,13 +40,9 @@
                     <div class="lomake">
                     <label for="subject">Kiinnostava vene</label>
                     <select name="subject" id="subject" required>
-                    
-
-                    
-                    <option value="Honda">Honda</option>
-                    <option value="Marine">Marine</option>
-                    <option value="LTAPSAH">LTAPSAH</option>
-
+                        <option value="Honda">Honda</option>
+                        <option value="Marine">Marine</option>
+                        <option value="LTAPSAH">LTAPSAH</option>
                     </select>
                     </div>
 
@@ -57,12 +50,9 @@
                     <div class="lomake">
                     <label for="message">Viesti*</label>
                     <textarea name="message" id="message" minlength="10" maxlength="1000" required></textarea>
-                    
+                    </div>
 
-                      <button type="submit">Lähetä</button>
-
-
-
+                    <button type="submit">Lähetä</button>
         </form>
 
     </main>
