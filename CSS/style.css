@@ -1,9 +1,3 @@
-
-
-
-
-/*toisaalta otettu*/
-
 /*perusasetukset*/
 
 *{
@@ -85,12 +79,6 @@ nav a{
     padding-block: 50px;
 }
 
-.esittely img{
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-}
-
 .teksti{
     position: relative;
     width: 100%;
@@ -114,9 +102,6 @@ nav a{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "yla iso"
-    "ala iso";
     gap: 24px;
 }
 
@@ -240,5 +225,11 @@ dl.side-by-side dd {
 @media (width <900px){
     .esittely{
         grid-template-columns: 1fr;
+        
+    }
+
+    .kortit{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: 1fr 1fr;
     }
 }
