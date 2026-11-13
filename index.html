@@ -8,11 +8,11 @@
 <body>
     <header>
         <div class="rajaus header-content">
-            <a href="index.html" class="logo">Matkayhtiö</a>
+            <a href="index.html" class="logo">VeneKauppa</a>
             <nav>
                 <a href="index.html">Etusivu</a>
-                <a href="matkainfo.html">Matkainfo</a>
-                <a href="matkatoive.html">Matkatoive</a>
+                <a href="#veneet">Veneet</a>
+                <a href="tiedustelu.html">Tiedustelu</a>
             </nav>
         </div>
     </header>
@@ -28,16 +28,17 @@
         </section>
         <section>
             <!--grid-->
-            <div class="kortit">
-                <article class="kortti kortti-yla">
+            <div class="kortit" id="veneet">
+                <article class="kortti">
                     <img class="kortti-kuva" src="images/iso-vene.jpg" alt="laiva" width="1920">
                     <div class="kortti-teksti">
                         <p class="ylateksti">Laivalla</p>
                         <h3>1 päivä | 7 - 39 €</h3>
                         <p class="huomautus">Yksisuuntainen. Ei sisällytä hotellia.</p>
+                        <a class="korttilinkki" href="boat1.html">Laita matkatoive</a>
                     </div>
                 </article>
-                <article class="kortti kortti-ala">
+                <article class="kortti">
                     <img class="kortti-kuva" src="images/antranias-vene.jpg" alt="juna" width="1920">
                     <div class="kortti-teksti">
                         <p class="ylateksti">Junalla</p>
@@ -45,13 +46,12 @@
                         <p>hinta riippuu matkan pituudesta</p>
                     </div>
                 </article>
-                <article class="kortti kortti-iso">
+                <article class="kortti">
                     <img class="kortti-kuva" src="images/ltapsah-vene.jpg" alt="lentekone" width="1920">
                     <div class="kortti-teksti">
                         <p class="ylateksti">Lentokoneella</p>
                         <h3>1 - 6 tuntia | Alkaen 70 €</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a class="korttilinkki" href="matkatoive.html">Laita matkatoive</a>
                     </div>
                 </article>
             </div>
@@ -59,7 +59,7 @@
     </main>
     <footer>
         <div class="footer-content">
-            <p>Matkayhtiö</p>
+            <p>VeneKauppa</p>
             <p>|</p>
             <p>Puh: 123 456 7890</p>
         </div>
