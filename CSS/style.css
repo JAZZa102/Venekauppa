@@ -132,19 +132,6 @@ nav a{
     background-color: var(--sini);
 }
 
-.kortti-iso{
-    grid-area: iso;
-    aspect-ratio: 4/6;
-}
-
-.kortti-yla{
-    grid-area: yla;
-}
-
-.kortti-ala{
-    grid-area: ala;
-}
-
 .kortti-kuva{
     object-fit: cover;
 }
@@ -235,16 +222,4 @@ input:user-invalid + .virhe{
     .esittely{
         grid-template-columns: 1fr;
     }
-
-    .kortit{
-        grid-template-areas: 
-        "iso iso"
-        "yla ala";
-        grid-template-rows: auto auto;
-    }
-
-    .kortti-iso{
-        aspect-ratio: 3/2;
-    }
-    .kortti-yla, .kortti-ala {aspect-ratio: 4/3;}
 }
