@@ -121,6 +121,7 @@ nav a{
     position: absolute;
     inset: 0;
     width: 100%;
+    max-height: 300px;
     height: 100%;
 }
 
@@ -135,7 +136,6 @@ nav a{
 
 .kortti-teksti p, .kortti-teksti h3{
     margin-top: 0;
-    background-color: var(--sini);
 }
 
 .korttilinkki{
