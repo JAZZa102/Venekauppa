@@ -225,7 +225,6 @@ dl.side-by-side dd {
 @media (width <900px){
     .esittely{
         grid-template-columns: 1fr;
-        
     }
 
     .kortit{
