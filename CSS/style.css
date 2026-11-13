@@ -217,8 +217,9 @@ input:user-invalid + .virhe{
 /*Contact.html lomake gridi*/
 .lomake{
     display: grid;
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 100px 1fr;
     gap: 10px;
+    padding: 5px;
 }
 
 @media (width <900px){
