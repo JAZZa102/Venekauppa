@@ -6,6 +6,7 @@
     <title>VeneKauppa</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+<body>
 <header>
     <div class="rajaus header-content">
             <a href="index.html" class="logo">VeneKauppa</a>
@@ -17,28 +18,57 @@
         </div>
 </header>
 <main>
-    <section class="esittely">
-        <div class="teksti">
-            <a href="contact.html">Kysy tästä veneestä</a>
-        </div>
-        <img class="kortti-kuva" src="images/iso-vene.jpg" alt="esittelykuva" width="400" height="400">
-    </section>
-   
-    <section class="esittely">
-        <div class="teksti">
-            <a href="contact.html">Kysy tästä veneestä</a>
-        </div>
-        <img class="kortti-kuva" src="images/valkoinen-vene.jpg" alt="esittelykuva" width="400" height="400">
-        <p>Valkoinen-vene</p>
-        <h3>599 €</h3>
-    </section>
+    <section>
+            <!--grid-->
+            <div class="kortit" id="veneet">
+                <article class="kortti">
+                    <a class="korttilinkki" href="boat1.html">
+                    <img class="kortti-kuva" src="images/iso-vene.jpg" alt="laiva" width="1920">
+                    <div class="kortti-teksti">
+                        <dl>
+                            <dt>Hinta</dt>
+                            <dd>599 €</dd>
+                            <dt>Moottori</dt>
+                            <dd>Yamaha 150 hv</dd>
+                            <dt>Pituus</dt>
+                            <dd>6,5 m</dd>
+                            <dt>Leveys</dt>
+                            <dd>2,5 m</dd>
+                        </dl>
+                    </div>
+                    </a>
+                </article>
+                <article class="kortti">
+                    <img class="kortti-kuva" src="images/pikku-vene.jpg" alt="juna" width="1920">
+                    <div class="kortti-teksti">
+                        <p class="ylateksti">pikku-vene</p>
+                        <dl>
+                            <dt>Hinta</dt>
+                            <dd>619 €</dd>
+                            <dt>Moottori</dt>
+                            <dd>Marine 200 hv</dd>
+                            <dt>Pituus</dt>
+                            <dd>7,0 m</dd>
+                            <dt>Leveys</dt>
+                            <dd>2,8 m</dd>
+                        </dl>
+                    </div>
+                </article>
+                <article class="kortti">
+                    <img class="kortti-kuva" src="images/valkoinen-vene.jpg" alt="lentekone" width="1920">
+                    <div class="kortti-teksti">
+                        <p class="ylateksti">Ltapsah-vene</p>
+                        <h3>579 €</h3>
+                        <p>Ei saatavilla</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section class="esittely">
-        <div class="teksti">
-            <a href="contact.html">Kysy tästä veneestä</a>
-        </div>
-        <img class="kortti-kuva" src="images/pikku-vene.jpg" alt="esittelykuva" width="400" height="400">
-    </section>
+
+
+
+
 
 
 
@@ -54,9 +84,5 @@
     </footer>
 </main>
 
-
-
-<body>
-    
 </body>
 </html>
