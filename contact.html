@@ -8,6 +8,22 @@
     <link rel="stylesheet" href="CSS/style.css">
  
 </head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const params = new URLSearchParams(window.location.search);
+    const vene = params.get("vene");
+
+    if (vene) {
+        const valikko = document.getElementById("subject");
+        if (valikko) {
+            valikko.value = vene;
+        }
+    }
+
+});
+</script>
 <header>
     <div class="rajaus header-content">
             <a href="index.html" class="logo">VeneKauppa</a>
@@ -29,7 +45,7 @@
                     </div>
 
                     <div class="lomake">
-                    <label for="email">Sähköposti</label>
+                    <label for="email">Sähköposti*</label>
                     <input type="email" id="email" name="email" required maxlength="120">
                     </div>
 
