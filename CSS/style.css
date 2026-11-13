@@ -222,6 +222,21 @@ input:user-invalid + .virhe{
     padding: 5px;
 }
 
+dl.side-by-side {
+  display: grid;
+  grid-template-columns: max-content 1fr; /* tai esim. 150px 1fr */
+  gap: 4px 16px; /* rivi- ja sarakelävistys */
+  align-items: baseline;
+}
+
+dl.side-by-side dt {
+  font-weight: bold;
+}
+
+dl.side-by-side dd {
+  margin: 0;
+}
+
 @media (width <900px){
     .esittely{
         grid-template-columns: 1fr;
